@@ -83,7 +83,7 @@ if [ "$1" != "--rebuild" ]; then
 	echo >&2
 	echo "   WARNING: This is a destructive operation. You will lose your data." >&2
 	echo "            This script has only been tested with Debian 9.4 x64 droplets." >&2
-	exit 1
+	exit 0
 fi
 
 if [ "$(id -u)" -ne "0" ]; then
